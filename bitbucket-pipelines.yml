@@ -4,4 +4,4 @@ pipelines:
   default:
     - step:
         script:
-          - git push --mirror git@github.com:alexandritegalle/walkie-talkie.git
+          - git push --mirror --all git@github.com:alexandritegalle/walkie-talkie.git
