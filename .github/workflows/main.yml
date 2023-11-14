@@ -1,0 +1,11 @@
+  - name: Checkout
+    uses: actions/checkout@v2
+    with:
+      fetch-depth: 0 # <-- clone with complete history
+  - name: Push
+    uses: heussd/mirror-to-bitbucket-github-action@v2
+    with:
+      username: pawangamage1992@gmail.com
+      spacename: two-way-test
+      repository: walkie-talkie
+      password: ${{ secrets.BITBUCKET_PASSWORD }}
